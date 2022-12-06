@@ -9,47 +9,70 @@ import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.jpg";
+import projImg11 from "../assets/img/project-img11.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
+  const projectsTab1 = [
     {
-      title: "Business Startup",
+      title: "React Website with Styled Components",
       description: "Design & Development",
       imgUrl: projImg8,
+      repository: "GitHub",
+      repositorylink:
+        "https://github.com/ChristopherCruz21/React-Styled-Components",
+      livedemolink: "https://christopherdolla.netlify.app",
     },
     {
-      title: "Business Startup",
+      title: "Pure HTML & CSS Fully Responsive Portfolio",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg9,
+      repository: "GitHub",
+      repositorylink: "https://github.com/ChristopherCruz21/personalWebsite",
+      livedemolink: "https://christophercruz21.github.io/personalWebsite/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "R Case Study",
+      description: "Divvy Bike-share Data Analysis",
+      imgUrl: projImg7,
+      repository: "Kaggle",
+      repositorylink:
+        "https://www.kaggle.com/code/christophercc/case-study-divvy-bike-share-data/notebook",
+      livedemolink:
+        "https://www.kaggle.com/code/christophercc/case-study-divvy-bike-share-data?scriptVersionId=84438741&cellId=16",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg4,
+      title: "Divvy Bikes 2021 Q1",
+      description: "Divvy Bike-share Data Visualization in Tableau",
+      imgUrl: projImg6,
+      repository: "GitHub",
+      repositorylink:
+        "https://public.tableau.com/app/profile/christopher.cruz.collazo/viz/DivvyBikes2021Q1/Dashboard1",
+      livedemolink:
+        "https://public.tableau.com/app/profile/christopher.cruz.collazo/viz/DivvyBikes2021Q1/Dashboard1",
     },
     {
-      title: "Business Startup",
+      title: "(On Development)React Portfolio Website",
       description: "Design & Development",
-      imgUrl: projImg5,
+      imgUrl: projImg11,
+      repository: "GitHub",
+      repositorylink: "https://github.com/ChristopherCruz21/React-portfolio",
+      livedemolink: "https://ccruzreact.netlify.app/",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "(UPCOMING)MERN Full Stack Web App",
+      description: "E-devices Repair store web app",
+      imgUrl: projImg10,
+      repository: "N/A",
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -86,28 +109,16 @@ export const Projects = () => {
                     >
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => {
+                          {projectsTab1.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="second">
+                        <p>Future Projects</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <p>Future Projects</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
